@@ -4,7 +4,8 @@
   "description": "es2015 and es2016 experimenting",
   "main": "index.js",
   "scripts": {
-    "build": "babel src -d lib"
+    "build": "babel src -d lib",
+    "lint" : "eslint src"
   },
   "author": "David Vujic",
   "license": "MIT",
