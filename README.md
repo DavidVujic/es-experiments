@@ -6,17 +6,20 @@ http://kangax.github.io/compat-table/esnext/
 ## Setup
 ### Babel
 babel-cli
+
 package.json (npm init, install) och "commands"
 
 #### babel presets
+* babel-preset-es2015
+* babel-preset-stage-3
+* babel-preset-stage-2
+* babel-preset-stage-1
+
 .babelrc
-babel-preset-es2015
-babel-preset-stage-3
-babel-preset-stage-2
-babel-preset-stage-1
 
 #### babel plugins
 babel-polyfill
+
 babel-runtime
 
 ### Linting
@@ -29,5 +32,7 @@ language babel
 
 ### Command line
 npm install
+
 babel och eslint
+
 npm scripts
