@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "babel src -d lib",
-    "lint" : "eslint src"
+    "lint": "node_modules/.bin/eslint src"
   },
   "author": "David Vujic",
   "license": "MIT",
