@@ -26,3 +26,8 @@ babel-eslint
 
 ### Atom
 language babel
+
+### Command line
+npm install
+babel och eslint
+npm scripts
