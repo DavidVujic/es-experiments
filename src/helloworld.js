@@ -1,5 +1,3 @@
-/*global window*/
-
 let message = () => 'hello world';
 
-window.console.log(message());
+console.log(message());
