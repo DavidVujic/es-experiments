@@ -24,7 +24,9 @@ babel-runtime
 
 ### Linting
 eslint (install och --init)
+
 .eslintrc.*
+
 babel-eslint
 
 ### Atom
@@ -35,4 +37,24 @@ npm install
 
 babel och eslint
 
-npm scripts
+npm scripts:
+* deps
+* transpile
+* lint
+* build
+
+## ES 2015
+(let, const, scope, arrow functions, modules)
+
+Promises
+
+Generators
+
+## ES 2016
+Exponentiation Operator
+
+Array.prototype.includes
+
+
+## ES next
+async/await
