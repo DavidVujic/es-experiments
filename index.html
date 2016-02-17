@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>ES2015, ES2016 and ES next experimenting</title>
+	<style>
+		body {
+			background-color: black;
+			color: greenyellow;
+			font-family: monospace;
+			font-size: 1.5em;
+		}
+	</style>
+</head>
+
+<body>
+
+	<div id="message-container" />
+
+	<script src="lib/vendor/babel-polyfill.min.js"></script>
+	<script src="lib/vendor/require.min.js"></script>
+	<script src="lib/vendor/require-config.js"></script>
+
+	<script>
+		(function() {
+			'use strict';
+			require(['app']);
+		}());
+	</script>
+
+</body>
+
+</html>

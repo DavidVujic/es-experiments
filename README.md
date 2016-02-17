@@ -22,6 +22,8 @@ babel-polyfill
 
 babel-runtime
 
+babel-plugin-transform-es2015-modules-amd
+
 ### Linting
 eslint (install och --init)
 
@@ -38,10 +40,14 @@ npm install
 babel och eslint
 
 npm scripts:
-* deps
+* deps (copy and minify)
 * transpile
 * lint
 * build
+
+### Transpiled code
+requirejs
+
 
 ## ES 2015
 (let, const, scope, arrow functions, modules)
