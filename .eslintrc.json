@@ -1,4 +1,7 @@
 {
+	"parserOptions": {
+		"sourceType": "module"
+	},
 	"rules": {
 		"eqeqeq": 2,
 		"no-console": 0,
