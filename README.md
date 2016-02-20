@@ -1,13 +1,13 @@
 # ECMAScript 2016 - back to the future
 
-## ES 2015 och ES 2016
+## ES 2015, ES 2016 and ES next
 http://kangax.github.io/compat-table/esnext/
 
 ## Setup
 ### Babel
 babel-cli
 
-package.json (npm init, install) och "commands"
+package.json (npm init, install), "commands"
 
 #### babel presets
 * babel-preset-es2015
@@ -50,11 +50,13 @@ requirejs
 
 
 ## ES 2015
-(let, const, scope, arrow functions, modules)
+(let, const, scope, arrow functions, modules, classes ...)
 
 Promises
 
 Generators
+
+Async with generators and promises
 
 ## ES 2016
 Exponentiation Operator
@@ -63,4 +65,4 @@ Array.prototype.includes
 
 
 ## ES next
-async/await
+Simplified async with async/await
