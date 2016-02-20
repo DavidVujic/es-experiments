@@ -25,7 +25,7 @@ babel-runtime
 babel-plugin-transform-es2015-modules-amd
 
 ### Linting
-eslint (install och --init)
+eslint (install and --init)
 
 .eslintrc.*
 
@@ -37,7 +37,7 @@ language babel
 ### Command line
 npm install
 
-babel och eslint
+babel and eslint
 
 npm scripts:
 * deps (copy and minify)
