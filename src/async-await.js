@@ -1,22 +1,22 @@
 import log from 'log';
 import get from 'ajax-with-promise';
-import run from 'async-runner';
 
 function main() {
 
-	run(function* ajaxCalls() {
-		let result = yield get('hello.json');
+	async function ajaxCalls() {
+		let result = await get('hello.json');
 		log(result);
 
-		let result2 = yield get('world.json');
+		let result2 = await get('world.json');
 		log(result2);
 
 		log('... and done.');
-	});
+	}
+
+	ajaxCalls();
 
 	log('Waiting...');
 	setTimeout(() => log('doing other stuff...'), 10);
-
 }
 
 export default main;

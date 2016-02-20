@@ -1,3 +1,6 @@
-import main from 'async-generator';
+import {default as mainNext} from 'async-await';
+import {default as mainES6} from 'async-generator';
 
-main();
+//mainNext();
+
+mainES6();
