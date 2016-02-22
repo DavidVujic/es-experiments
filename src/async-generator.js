@@ -15,7 +15,7 @@ function main() {
 	});
 
 	log('Waiting...');
-	setTimeout(() => log('doing other stuff...'), 10);
+	setTimeout(() => log('doing other stuff...'), 50);
 
 }
 
