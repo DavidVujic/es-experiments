@@ -1,28 +1,29 @@
 function run(generator) {
-
-	let gen = generator();
+	gen = generator();
 
 	handleNext();
-
-	function handleNext(result) {
-		let next = gen.next(result);
-
-		if (next.done) {
-			return next.value;
-		}
-
-		handlePromise(next);
-	}
-
-	function handlePromise(next) {
-		next.value
-			.then(function (result) {
-				handleNext(result);
-			})
-			.catch(function (error) {
-				gen.throw(error);
-			});
-	}
 }
+
+function handleNext(result) {
+	const next = gen.next(result);
+
+	if (next.done) {
+		return next.value;
+	}
+
+	handlePromise(next);
+}
+
+function handlePromise(next) {
+	next.value
+		.then((result) => {
+			handleNext(result);
+		})
+		.catch((error) => {
+			gen.throw(error);
+		});
+}
+
+let gen;
 
 export default run;
