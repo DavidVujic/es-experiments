@@ -29,10 +29,12 @@ eslint (install and --init)
 
 .eslintrc.*
 
-babel-eslint
+.eslintignore
 
 ### Atom
-language babel
+linter-eslint
+
+language-babel
 
 ### Command line
 npm install
