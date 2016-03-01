@@ -4,10 +4,10 @@ import get from 'ajax-with-promise';
 function main() {
 
 	async function ajaxCalls() {
-		let result = await get('hello.json');
+		let result = await get('examples/hello.json');
 		log(result);
 
-		let result2 = await get('world.json');
+		let result2 = await get('examples/world.json');
 		log(result2);
 
 		log('... and done.');

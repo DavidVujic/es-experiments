@@ -4,10 +4,10 @@ import get from 'ajax-with-promise';
 function main() {
 
 	function ajaxCalls() {
-		get('hello.json')
+		get('examples/hello.json')
 		.then(log);
 
-		get('world.json')
+		get('examples/world.json')
 		.then(log);
 
 		log('... and done.');
