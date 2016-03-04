@@ -18,9 +18,7 @@ package.json (npm init, install), "commands"
 .babelrc
 
 #### babel plugins
-babel-polyfill
-
-babel-runtime
+babel-polyfill/babel-runtime
 
 babel-plugin-transform-es2015-modules-amd
 
@@ -53,6 +51,8 @@ requirejs
 
 ## ES 2015
 (let, const, scope, arrow functions, modules, classes ...)
+
+Callbacks
 
 Promises
 
