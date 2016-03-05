@@ -22,6 +22,8 @@ babel-polyfill/babel-runtime
 
 babel-plugin-transform-es2015-modules-amd
 
+babel-plugin-external-helpers
+
 ### Linting
 eslint (install and --init)
 
