@@ -34,6 +34,12 @@ linter-eslint
 
 language-babel
 
+### REPL
+babel-node
+
+babel-plugin-transform-es2015-modules-commonjs
+
+
 ### Command line
 npm install
 
@@ -46,7 +52,7 @@ npm scripts:
 * build
 
 ### Transpiled code
-requirejs
+AMD modules (requirejs)
 
 
 ## ES 2015
