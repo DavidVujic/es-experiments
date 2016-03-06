@@ -72,11 +72,13 @@ Babel: presets & plugins
 
 Tools: eslint & npm
 
+Experiment and learn: the REPL
+
 #### Atom
 plugins
 
 ### Focus: async JavaScript programming
-* callbacks
-* promises
-* generators
-* async & await
+- callbacks
+- promises
+- generators
+- async & await
