@@ -66,3 +66,17 @@ async function myFunc() {
     return result;
 }
 ```
+
+#### Yes, Babel!
+Babel: presets & plugins
+
+Tools: eslint & npm
+
+#### Atom
+plugins
+
+### Focus: async JavaScript programming
+* callbacks
+* promises
+* generators
+* async & await
