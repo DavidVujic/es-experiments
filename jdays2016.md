@@ -22,7 +22,7 @@ export default myFunc;
 ```javascript
 return new Promise((resolve, reject) => {
     // do async stuff here
-};
+});
 ```
 
 ```javascript
