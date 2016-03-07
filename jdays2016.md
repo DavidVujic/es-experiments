@@ -69,7 +69,13 @@ async function myFunc() {
 }
 ```
 
-#### Yes, Babel!
+### async JavaScript programming
+- callbacks
+- promises
+- generators
+- async & await
+
+### Babble?
 Babel: presets & plugins
 
 Tools: eslint & npm
@@ -78,9 +84,3 @@ Experiment and learn: the REPL
 
 #### Atom
 plugins
-
-### Focus: async JavaScript programming
-- callbacks
-- promises
-- generators
-- async & await
