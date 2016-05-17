@@ -4,11 +4,13 @@ jDays 2016 session
 ## Some ES 2015 (aka ES6) features
 
 ```javascript
-import myModule from 'modules/myModule';
+import calculator from 'modules/calculator';
 
-const myValue = 10;
+let result = calculator.add(1, 2);
 
-let myFunc = (x, y) => x + y;
+
+
+const myFunc = (message) => 'Hello' + message;
 
 export default myFunc;
 ```
@@ -17,6 +19,9 @@ export default myFunc;
 {
     let myScopedVariable = 'hello world';
 }
+
+// yes, this will fail
+console.log(myScopedVariable);
 ```
 
 ```javascript
@@ -53,8 +58,20 @@ class myClass {
 ("Babble")
 
 ### ES 2016?
-- Exponentiation Operator
 - Array.prototype.includes
+- Exponentiation Operator
+
+```javascript
+
+let arr = [1, 2, 3];
+
+console.log(arr.includes(3));
+
+let a = 10;
+let b = 2;
+
+console.log(a ** b);
+```
 
 ### No more cool features?
 [https://github.com/tc39/ecma262#ecmascript](https://github.com/tc39/ecma262#ecmascript)
