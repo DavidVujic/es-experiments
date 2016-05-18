@@ -1,4 +1,5 @@
 function get(url, onSuccess, onError) {
+
 	var request = new XMLHttpRequest();
 
 	request.open('GET', url, true);
