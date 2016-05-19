@@ -11,7 +11,7 @@
 		"deps:create-helpers": "babel-external-helpers -t var >lib/vendor/babel-helpers.js",
 		"deps:helpers": "npm run deps:create-helpers && npm run deps:minify-helpers && npm run deps:cleanup-helpers",
 		"deps": "npm run deps:babel && npm run deps:requirejs && npm run deps:helpers",
-		"transpile": "babel --plugins transform-es2015-modules-amd src -d lib/modules",
+		"transpile": "babel src -d lib/modules",
 		"lint": "eslint src",
 		"clean": "rm -rf lib/modules/*",
 		"watch": "nodemon --watch src/ --exec 'npm run transpile'",
