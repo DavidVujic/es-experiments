@@ -1,7 +1,4 @@
-# ECMAScript 2016 - back to the future
-
-## ES 2015, ES 2016 and ES next
-http://kangax.github.io/compat-table/esnext/
+# ES 2015, ES 2016 and ES next
 
 ## Setup
 ### Babel
