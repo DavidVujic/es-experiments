@@ -7,9 +7,12 @@ function main() {
 		let result = await get('examples/hello.json');
 		log(result);
 
-		let result2 = await get('examples/world.json');
-		log(result2);
-
+		try {
+			let result2 = await get('examples/world.json');
+			log(result2);
+		} catch (e) {
+			log(e);
+		}
 		log('... and done.');
 	}
 

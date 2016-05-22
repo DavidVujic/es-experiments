@@ -5,10 +5,12 @@ function main() {
 
 	function ajaxCalls() {
 		get('examples/hello.json')
-		.then(log);
+			.then(log)
+			.catch(log);
 
 		get('examples/world.json')
-		.then(log);
+			.then(log)
+			.catch(log);
 
 		log('... and done.');
 	}
