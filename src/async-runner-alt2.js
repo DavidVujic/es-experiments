@@ -1,27 +1,27 @@
 function run(gen) {
-	let it = gen();
+    let it = gen();
 
-	return Promise.resolve().then(handleNext);
+    return Promise.resolve().then(handleNext);
 
-	function handleNext(value) {
-		var next = it.next(value);
+    function handleNext(value) {
+        var next = it.next(value);
 
-		return handleResult(next);
-	}
+        return handleResult(next);
+    }
 
-	function handleResult(next) {
-		if (next.done) {
-			return next.value;
-		}
+    function handleResult(next) {
+        if (next.done) {
+            return next.value;
+        }
 
-		return Promise.resolve(next.value)
-			.then(handleNext)
-			.catch(handleError);
-	}
+        return Promise.resolve(next.value)
+            .then(handleNext)
+            .catch(handleError);
+    }
 
-	function handleError(err) {
-		return Promise.resolve(it.throw(err)).then(handleResult);
-	}
+    function handleError(err) {
+        return Promise.resolve(it.throw(err)).then(handleResult);
+    }
 }
 
 export default run;

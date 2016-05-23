@@ -3,22 +3,22 @@ import get from 'ajax-with-promise';
 
 function main() {
 
-	function ajaxCalls() {
-		get('examples/hello.json')
-			.then(log)
-			.catch(log);
+    function ajaxCalls() {
+        get('examples/hello.json')
+            .then(log)
+            .catch(log);
 
-		get('examples/world.json')
-			.then(log)
-			.catch(log);
+        get('examples/world.json')
+            .then(log)
+            .catch(log);
 
-		log('... and done.');
-	}
+        log('... and done.');
+    }
 
-	ajaxCalls();
+    ajaxCalls();
 
-	log('Waiting...');
-	setTimeout(() => log('doing other stuff...'), 10);
+    log('Waiting...');
+    setTimeout(() => log('doing other stuff...'), 10);
 }
 
 export default main;

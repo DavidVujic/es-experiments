@@ -1,8 +1,8 @@
 const log = (message) => {
-	const container = document.querySelector('#message-container');
+    const container = document.querySelector('#message-container');
 
-	container.innerHTML += message;
-	container.innerHTML += '<br/>';
+    container.innerHTML += message;
+    container.innerHTML += '<br/>';
 };
 
 export default log;

@@ -1,27 +1,27 @@
 function run(generator) {
-	gen = generator();
+    gen = generator();
 
-	handleNext();
+    handleNext();
 }
 
 function handleNext(result) {
-	const next = gen.next(result);
+    const next = gen.next(result);
 
-	if (next.done) {
-		return next.value;
-	}
+    if (next.done) {
+        return next.value;
+    }
 
-	handlePromise(next);
+    handlePromise(next);
 }
 
 function handlePromise(next) {
-	next.value
-		.then((result) => {
-			handleNext(result);
-		})
-		.catch((error) => {
-			gen.throw(error);
-		});
+    next.value
+        .then((result) => {
+            handleNext(result);
+        })
+        .catch((error) => {
+            gen.throw(error);
+        });
 }
 
 let gen;
