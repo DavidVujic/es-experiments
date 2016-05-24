@@ -4,5 +4,7 @@ DevSum 2016 session
 
 **Presentation slides**: <https://onedrive.live.com/redir?resid=AC42F465C36C4B61%2150151>
 
+**Code examples and project setup**: https://github.com/DavidVujic/es-experiments
+
 **Blog post - JavaScript async: the future looks promising**
 <http://davidvujic.blogspot.se/2016/03/javascript-async-looks-promising.html>
