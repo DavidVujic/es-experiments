@@ -27,7 +27,7 @@
     "babel-preset-latest": "^6.16.0",
     "eslint": "^3.7.1",
     "live-server": "^1.1.0",
-    "nodemon": "^1.10.2",
+    "nodemon": "^1.11.0",
     "uglifyjs": "^2.4.10"
   },
   "dependencies": {
