@@ -1,4 +1,4 @@
-import { default as ajaxWithCallback } from 'ajax-with-callback';
+import {default as ajaxWithCallback} from 'ajax-with-callback';
 
 function get(url) {
 

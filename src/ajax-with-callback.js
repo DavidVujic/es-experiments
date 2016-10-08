@@ -3,7 +3,7 @@ function get(url, onSuccess, onError) {
 
     request.open('GET', url, true);
 
-    request.onload = function () {
+    request.onload = function() {
         if (this.status >= 200 && this.status < 400) {
             onSuccess(this.response);
         } else {
@@ -11,7 +11,7 @@ function get(url, onSuccess, onError) {
         }
     };
 
-    request.onerror = function () {
+    request.onerror = function() {
         onError('There was a connection error of some sort');
     };
 
