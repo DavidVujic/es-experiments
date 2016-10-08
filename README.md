@@ -1,4 +1,4 @@
-# ES 2015, ES 2016 and ES next
+# ES 2015, ES 2016 and ES 2017
 
 ## Setup
 
@@ -40,7 +40,7 @@ language-babel
 
 babel-node
 or
-node (v 6.7.0)
+node (v. 6.7.0 or later)
 
 ### Command line
 
@@ -77,6 +77,6 @@ Exponentiation Operator
 
 Array.prototype.includes
 
-## ES next
+## ES 2017
 
 Simplified async with async/await
