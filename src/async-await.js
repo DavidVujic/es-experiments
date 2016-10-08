@@ -2,6 +2,7 @@ import log from 'log';
 import get from 'ajax-with-promise';
 
 function main() {
+    log('the async-await module:');
 
     async function ajaxCalls() {
         let result = await get('examples/hello.json');

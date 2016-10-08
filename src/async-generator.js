@@ -3,6 +3,7 @@ import get from 'ajax-with-promise';
 import run from 'async-runner';
 
 function main() {
+    log('the async generator module:');
 
     run(function* ajaxCalls() {
         let result = yield get('examples/hello.json');

@@ -1,38 +1,28 @@
 {
-    "name": "es-experiments",
-    "version": "1.0.0",
-    "description": "ES2015, ES2016 and ES next experimenting",
-    "main": "index.js",
-    "scripts": {
-        "deps:babel": "cp node_modules/babel-polyfill/dist/polyfill.min.js lib/vendor/babel-polyfill.min.js",
-        "deps:requirejs": "uglifyjs node_modules/requirejs/require.js -c -m -o lib/vendor/require.min.js",
-        "deps:cleanup-helpers": "rm -rf lib/vendor/babel-helpers.js",
-        "deps:minify-helpers": "uglifyjs lib/vendor/babel-helpers.js -c -m -o lib/vendor/babel-helpers.min.js",
-        "deps:create-helpers": "babel-external-helpers -t var >lib/vendor/babel-helpers.js",
-        "deps:helpers": "npm run deps:create-helpers && npm run deps:minify-helpers && npm run deps:cleanup-helpers",
-        "deps": "npm run deps:babel && npm run deps:requirejs && npm run deps:helpers",
-        "transpile": "babel src -d lib/modules --source-maps",
-        "watch": "babel src -d lib/modules --source-maps --watch",
-        "lint": "eslint src",
-        "clean": "rm -rf lib/modules/*",
-        "build": "npm run clean && npm run lint -s && npm run transpile && npm run deps",
-        "web": "live-server --watch=lib/modules/",
-        "repl": "NODE_ENV=repl babel-node",
-        "repl-win": "set NODE_ENV=repl && babel-node"
-    },
-    "author": "David Vujic",
-    "license": "MIT",
-    "devDependencies": {
-        "babel-cli": "^6.16.0",
-        "babel-plugin-external-helpers": "^6.8.0",
-        "babel-plugin-transform-es2015-modules-amd": "^6.8.0",
-        "babel-preset-latest": "^6.16.0",
-        "eslint": "^3.7.1",
-        "live-server": "^1.1.0",
-        "uglifyjs": "^2.4.10"
-    },
-    "dependencies": {
-        "babel-polyfill": "^6.16.0",
-        "requirejs": "^2.3.2"
-    }
+  "name": "es-experiments",
+  "version": "1.0.0",
+  "description": "ES2015, ES2016 and ES next experimenting",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint src",
+    "clean": "rm -rf lib/*",
+    "web": "live-server --watch=lib/",
+    "repl": "NODE_ENV=repl babel-node",
+    "build": "webpack --optimize-minimize --optimize-dedupe",
+    "watch": "webpack --optimize-minimize --optimize-dedupe --watch"
+  },
+  "author": "David Vujic",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.16.0",
+    "babel-core": "^6.17.0",
+    "babel-loader": "^6.2.5",
+    "babel-preset-latest": "^6.16.0",
+    "eslint": "^3.7.1",
+    "live-server": "^1.1.0",
+    "webpack": "^1.13.2"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.16.0"
+  }
 }
