@@ -12,10 +12,10 @@
         "deps:helpers": "npm run deps:create-helpers && npm run deps:minify-helpers && npm run deps:cleanup-helpers",
         "deps": "npm run deps:babel && npm run deps:requirejs && npm run deps:helpers",
         "transpile": "babel src -d lib/modules --source-maps",
+        "watch": "babel src -d lib/modules --source-maps --watch",
         "lint": "eslint src",
         "clean": "rm -rf lib/modules/*",
         "build": "npm run clean && npm run lint -s && npm run transpile && npm run deps",
-        "watch": "nodemon --watch src/ --exec 'npm run transpile'",
         "web": "live-server --watch=lib/modules/",
         "repl": "NODE_ENV=repl babel-node",
         "repl-win": "set NODE_ENV=repl && babel-node"
@@ -29,7 +29,6 @@
         "babel-preset-latest": "^6.16.0",
         "eslint": "^3.7.1",
         "live-server": "^1.1.0",
-        "nodemon": "^1.11.0",
         "uglifyjs": "^2.4.10"
     },
     "dependencies": {

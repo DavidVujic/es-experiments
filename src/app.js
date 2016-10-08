@@ -9,4 +9,4 @@ import {default as mainCallback} from 'async-callback';
 
 //mainPromise();
 
-mainCallback();
+//mainCallback();
