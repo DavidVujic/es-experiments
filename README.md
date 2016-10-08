@@ -10,10 +10,7 @@ package.json (npm init, install), "commands"
 
 #### babel presets
 
-- babel-preset-es2015
-- babel-preset-stage-3
-- babel-preset-stage-2
-- babel-preset-stage-1
+- babel-preset-latest
 
 .babelrc
 
@@ -42,8 +39,8 @@ language-babel
 ### REPL
 
 babel-node
-
-babel-plugin-transform-es2015-modules-commonjs
+or
+node (v 6.7.0)
 
 ### Command line
 
