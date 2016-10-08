@@ -4,9 +4,9 @@
 
 ### Babel
 
-babel-cli
-babel-core
-babel-loader (used by webpack)
+- babel-cli
+- babel-core
+- babel-loader (used by webpack)
 
 package.json (npm init, install), "commands"
 
