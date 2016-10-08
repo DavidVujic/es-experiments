@@ -5,6 +5,8 @@
 ### Babel
 
 babel-cli
+babel-core
+babel-loader (used by webpack)
 
 package.json (npm init, install), "commands"
 
@@ -17,10 +19,6 @@ package.json (npm init, install), "commands"
 #### babel plugins
 
 babel-polyfill/babel-runtime
-
-babel-plugin-transform-es2015-modules-amd
-
-babel-plugin-external-helpers
 
 ### Linting
 
@@ -50,14 +48,13 @@ babel and eslint
 
 npm scripts:
 
-- deps (copy and minify)
-- transpile
-- lint
 - build
+- lint
+- watch
 
 ### Transpiled code
 
-AMD modules (requirejs)
+bundled, minified and source mapped with webpack
 
 ## ES 2015
 
