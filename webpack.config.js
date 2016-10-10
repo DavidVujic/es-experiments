@@ -24,5 +24,9 @@ module.exports = {
     devServer: {
         inline: true
     },
-    plugins: [new UglifyJsPlugin()]
+    plugins: [new UglifyJsPlugin({
+            compress: {
+                warnings: false
+            }
+        })]
 };
