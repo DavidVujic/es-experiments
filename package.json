@@ -1,13 +1,13 @@
 {
   "name": "es-experiments",
   "version": "1.0.0",
-  "description": "ES2015, ES2016 and ES next experimenting",
+  "description": "ES2015, ES2016 and ES 2017 experimenting",
   "main": "index.js",
   "scripts": {
     "lint": "eslint src",
     "clean": "rm -rf lib/*",
     "repl": "NODE_ENV=repl babel-node",
-    "build": "webpack --optimize-minimize --optimize-dedupe",
+    "build": "webpack",
     "devserver": "webpack-dev-server"
   },
   "author": "David Vujic",

@@ -1,4 +1,5 @@
 var path = require('path');
+var UglifyJsPlugin = require('webpack/lib/optimize/UglifyJsPlugin');
 
 module.exports = {
     entry: './src/main.js',
@@ -20,5 +21,8 @@ module.exports = {
         ]
     },
     devtool: 'source-map',
-    devServer: { inline: true }
+    devServer: {
+        inline: true
+    },
+    plugins: [new UglifyJsPlugin()]
 };
