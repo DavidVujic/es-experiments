@@ -4,7 +4,8 @@ module.exports = {
     entry: './src/main.js',
     output: {
         path: './lib',
-        filename: 'app.bundle.js'
+        filename: 'app.bundle.js',
+        publicPath: '/lib/'
     },
     resolve: {
         root: [path.resolve('./src')]
@@ -18,5 +19,6 @@ module.exports = {
             }
         ]
     },
-    devtool: 'source-map'
+    devtool: 'source-map',
+    devServer: { inline: true }
 };

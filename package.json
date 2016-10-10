@@ -6,10 +6,9 @@
   "scripts": {
     "lint": "eslint src",
     "clean": "rm -rf lib/*",
-    "web": "live-server --watch=lib/",
     "repl": "NODE_ENV=repl babel-node",
     "build": "webpack --optimize-minimize --optimize-dedupe",
-    "watch": "webpack --optimize-minimize --optimize-dedupe --watch"
+    "devserver": "webpack-dev-server"
   },
   "author": "David Vujic",
   "license": "MIT",
@@ -19,8 +18,8 @@
     "babel-loader": "^6.2.5",
     "babel-preset-latest": "^6.16.0",
     "eslint": "^3.7.1",
-    "live-server": "^1.1.0",
-    "webpack": "^1.13.2"
+    "webpack": "^1.13.2",
+    "webpack-dev-server": "^1.16.2"
   },
   "dependencies": {
     "babel-polyfill": "^6.16.0"
