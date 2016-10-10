@@ -5,9 +5,10 @@
   "main": "index.js",
   "scripts": {
     "lint": "eslint src",
-    "clean": "rm -rf lib/*",
     "repl": "NODE_ENV=repl babel-node",
-    "build": "webpack",
+    "clean": "rm -rf lib/*",
+    "add-polyfills": "cp node_modules/babel-polyfill/dist/polyfill.min.js lib/babel-polyfill.min.js",
+    "build": "webpack && npm run add-polyfills",
     "devserver": "webpack-dev-server"
   },
   "author": "David Vujic",
