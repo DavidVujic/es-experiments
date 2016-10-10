@@ -16,14 +16,9 @@ function main() {
         }, function(error) {
             log(error);
         });
-
-        log('... and done.');
     }
 
     ajaxCalls();
-
-    log('Waiting...');
-    setTimeout(() => log('doing other stuff...'), 10);
 }
 
 export default main;

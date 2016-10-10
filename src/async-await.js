@@ -14,13 +14,9 @@ function main() {
         } catch (e) {
             log(e);
         }
-        log('... and done.');
     }
 
     ajaxCalls();
-
-    log('Waiting...');
-    setTimeout(() => log('doing other stuff...'), 10);
 }
 
 export default main;

@@ -11,13 +11,7 @@ function main() {
 
         let result2 = yield get('examples/world.json');
         log(result2);
-
-        log('... and done.');
     });
-
-    log('Waiting...');
-    setTimeout(() => log('doing other stuff...'), 50);
-
 }
 
 export default main;
