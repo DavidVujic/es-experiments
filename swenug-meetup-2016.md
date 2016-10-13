@@ -2,7 +2,7 @@ Swenug meetup 2016-10-13
 
 # async JavaScript - from callbacks to ECMAScript 2017
 
-**Slides**: <https://1drv.ms/b/s!AmFLbMNl9EKsg55OlxJj_vZhzci-Ng>
+**Slides**: <https://1drv.ms/b/s!AmFLbMNl9EKsg6A-eOzoRPa3sg1vEQ>
 
 **Code examples and project setup**: https://github.com/DavidVujic/es-experiments
 
